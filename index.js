@@ -1,7 +1,6 @@
 //write your code here
 function findLongestWord(wordArray) {
-    // Letter counter
-    // Highest Word
+    // Initialize highest word and highest counter to the first element of array and its length respectively
     // Loop through array
     // If current length is greater than highest counter 
     // Initliaze highest word and counter
