@@ -1,1 +1,20 @@
 //write your code here
+function findLongestWord(wordArray) {
+    // Letter counter
+    // Highest Word
+    // Loop through array
+    // If current length is greater than highest counter 
+    // Initliaze highest word and counter
+    let highestCounter = wordArray[0].length;
+    let highestWord = wordArray[0]
+    for (let i = 1; i < wordArray.length; i++) {
+        if (wordArray[i].length > highestCounter) {
+            highestCounter = wordArray[i].length;
+            highestWord = wordArray[i];
+        }
+    }
+    return highestWord;
+}
+
+console.log(findLongestWord(["The","quick","brown", "fox", "jumped", "over", "the", "lazy", "dog"]));                  //returns "jumped"
+console.log(findLongestWord(["jazzy", "jumpy", "quaky"])) //returns "jazzy"findLongestWord(["jazzy", "jumpy", "quaky") //returns "jazzy"
